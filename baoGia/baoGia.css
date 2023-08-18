@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#section_quote {
+  padding-left: 160px;
+  padding-right: 160px;
+  box-sizing: border-box;
+}
+
+.container_item_quote {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: initial;
+  grid-column-gap: 32px;
+  grid-row-gap: 64px;
+}
+
+.conatiner_image_quote {
+  width: 100%;
+  position: relative;
+  display: grid;
+}
+
+.image_quote {
+  width: 100%;
+}
+
+.title_box_quote {
+  color: var(--grey-1, #212529);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+  padding: 12px 0px;
+}
+
+.title_detail_item_quote {
+  overflow: hidden;
+  color: var(--grey-2, #54585c);
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.item_quote {
+  width: fit-content;
+  display: flex;
+  background: var(--primary-color, #001a70);
+  position: absolute;
+  bottom: 0;
+  padding: 4px 16px;
+  border-radius: 0px 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.quote {
+  color: var(--white, #fff);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1250px) {
+  .title_box_quote {
+    font-size: 18px;
+  }
+
+  .title_detail_item_quote {
+    font-size: 15px;
+  }
+
+  .container_item_quote {
+    grid-row-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .title_box_quote {
+    font-size: 20px;
+  }
+
+  .title_detail_item_quote {
+    font-size: 16px;
+  }
+
+  .container_item_quote {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 64px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title_box_quote {
+    font-size: 20px;
+  }
+
+  .title_detail_item_quote {
+    font-size: 16px;
+  }
+
+  .container_item_quote {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 64px;
+  }
+
+  #section_quote {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
